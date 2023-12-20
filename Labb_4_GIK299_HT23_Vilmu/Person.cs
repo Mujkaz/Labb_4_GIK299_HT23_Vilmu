@@ -15,16 +15,16 @@ namespace Labb_4_GIK299_HT23_Vilmu
         public int Age { get; set; }
         public Gender gender { get; private set; }
         public Hair Hair { get; set; }
-        public DateTime Birthday { get; set; }
+        public string Birthday { get; set; }
         public string Eyecolor { get; set; }
 
         //Construct
 
-        public Person(string firstName, string lastName, int age, Gender gendertype, Hair hairtype, DateTime birthday, string eyecolor)
+        public Person(string firstName, string lastName, int ageSelect, Gender gendertype, Hair hairtype, string birthday, string eyecolor)
         {
             FirstName = firstName;
             LastName = lastName;
-            Age = age;
+            Age = ageSelect;
             gender = gendertype;
             Hair = hairtype;
             Birthday = birthday;
@@ -32,7 +32,7 @@ namespace Labb_4_GIK299_HT23_Vilmu
         }
 
 
-        //Vad som skrivs till konsolen. 
+        //Vad som skrivs ut i konsolen när man trycker på alternativ 2 i menyn.
         public override string ToString()
         {
             return $"First name: {FirstName}" +
@@ -41,7 +41,7 @@ namespace Labb_4_GIK299_HT23_Vilmu
                 $"\nGender: {gender}" +
                 $"\nHair: {Hair.hairColor} {Hair.hairLength}" +
                 $"\nBirthday: {Birthday:yyyy/MM/dd}" +
-                $"\nEyecolor: {Eyecolor}";
+                $"\nEyecolor: {Eyecolor}\n";
         }
     }
 }

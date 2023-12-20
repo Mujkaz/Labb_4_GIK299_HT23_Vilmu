@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,7 +10,8 @@ namespace Labb_4_GIK299_HT23_Vilmu
 {
     public struct Hair
     {
-        public string hairLength;
-        public string hairColor;
+        public string hairLength {  get; set; }
+        public string hairColor { get; set; }
+
     }
 }
