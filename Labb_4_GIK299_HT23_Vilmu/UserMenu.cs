@@ -98,7 +98,7 @@ namespace Labb_4_GIK299_HT23_Vilmu
 
                                 {
                                     Console.WriteLine("");
-                                    Console.WriteLine("Pick one of the following gender " + "1. " + Gender.Woman + " 2. " + Gender.Man + " 3. " + Gender.Nonbinary + " 4. " + Gender.Other);
+                                    Console.WriteLine("Pick one of the following gender " + "1. "  + Gender.Man + " 2. " + Gender.Woman + " 3. " + Gender.Nonbinary + " 4. " + Gender.Other);
 
                                     try
 
@@ -119,10 +119,10 @@ namespace Labb_4_GIK299_HT23_Vilmu
                                             switch (genderPick)
                                             {
                                                 case 1:
-                                                    genderType = Gender.Woman;
+                                                    genderType = Gender.Man;
                                                     break;
                                                 case 2:
-                                                    genderType = Gender.Man;
+                                                    genderType = Gender.Woman;
                                                     break;
                                                 case 3:
                                                     genderType = Gender.Nonbinary;
@@ -157,7 +157,7 @@ namespace Labb_4_GIK299_HT23_Vilmu
                                     }
                                 }
                                 //Lägger också en while-loop som loopar om denna del om man skulle skriva ålder fel. 
-                                // exempel om man skulle skriva bokstav på ålder och istället för att programmet fortsätter eller kraschar så får man börja om och göra rätt!
+                                //exempel om man skulle skriva bokstav på ålder och istället för att programmet fortsätter eller kraschar så får man börja om och göra rätt!
                                 bool ageSelectLoop = true;
                                 int ageSelect = 0;
                                 while (ageSelectLoop)
@@ -204,7 +204,9 @@ namespace Labb_4_GIK299_HT23_Vilmu
                                 break;
 
                             case "2":
-                                //Här är en foreach loop som ska visa personerna man har lagt in. Tar in då värden från "Person" och visar listan som data är sparad i.
+                                //Här är en foreach loop som ska visa personer man har lagt in. Tar in då värden från "Person" och visar listan som data är sparad i.
+
+                                Console.Clear();
                                 {
                                     foreach (Person showPerson in people)
                                     {
